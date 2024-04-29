@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+  --container-background-color: #2E3D52;
+  --background-color: #2E3D52;
+  --habilidades-color: #66B7D3;
+}
+
+html, body {
+  height: 100%;
+  background-image: url(assets/background.jpg);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.curriculo-area{
+  width: 900px;
+  height: 820px;
+  display: flex;
+}
+
+.infos{
+  padding-top: 30px;
+  width: calc(900px - 70%);
+  height: 100%;
+  background-color: var(--container-background-color);
+}
+
+.experiencia{
+  padding-top: 30px;
+  width: calc(900px - 30%);
+  height: 100%;
+  background-color: white;
+}
+
+.infos-contato{
+  display: flex;
+  width: 100%;
+}
+
+.informacoes{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
+  color: white;
+  display: flex;
+  padding: 6px;
+  width: 100%;
+  display: flex;
+}
+
+.informacoes p{
+  margin-left: 5px;
+}
+
+.informacoes .fa-solid{
+  margin-left: 50px;
+}
+
+.foto{
+  width: 90px;
+  height: 90px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  background-image: url(assets/fundo.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid white;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.others h4{
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.others h5{
+  text-transform: uppercase;
+  color: rgb(191, 190, 190);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.endereco{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.endereco p{
+  text-transform: uppercase;
+  color: rgb(191, 190, 190);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 8px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.endereco .fa-solid{
+  font-size: 10px;
+  color: rgb(191, 190, 190);
+}
+
+.habilidades{
+  margin-left: 10px;
+}
+
+.habilidades h5{
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: var(--habilidades-color);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.habilidades-status p{
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.habilidades-status h6{
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.progress-bar {
+  margin-top: 5px;
+  width: 90%;
+  height: 5px; 
+  border-radius: 4px; 
+  position: relative; /* Posicionamento relativo para o contêiner da barra */
+  background-color: #3e516c;
+}
+
+.progress{
+  height: 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.habilidades-status span{
+  color: rgb(191, 190, 190);
+}
+
+.linkedIn{
+  display: flex;
+  align-items: center;
+}
+
+.model-linkedin{
+  margin-top: 10px;
+}
+
+.linkedIn i{
+  color: white;
+  font-size: 12px;
+}
+
+.model-linkedin a{
+  text-decoration: none;
+  color: white;
+}
+
+.github{
+  margin-top: 10px;
+}
+
+.about {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.company{
+  margin-top: 30px;
+}
+.aeronautica{
+  display: flex;
+  align-items: center;
+}
+
+.about h3 {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 13px;
+  color: rgb(191, 190, 190);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.exp-area-{
+  display: flex;
+  margin-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px 210px 180px 100px; /* Cria 4 colunas */
+  grid-template-rows: repeat(3, 20px); /* Cria 3 linhas */
+  color: rgb(191, 190, 190);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 10px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merge-first-column-all{
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: top;
+}
+
+.merge-first-column-all img{
+  width: 75px;
+  height: 40px;
+}
+
+.logo-exp{
+  width: 75px;
+  height: 40px;
+}
+
+.logo-furb{
+  width: 75px;
+  height: 40px;
+}
+
+.logo-furb img{
+  width: 75px;
+  height: 70px; 
+}
+
+.merge-second-third{
+  grid-column: 2 / span 2;
+}
+
+.merge-area{
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 3;
+  justify-content: left;
+  align-items: flex-start;
+  font-size: 9px;
+  text-align: justify;
+}
+
+.cabecalho-exp{
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.cabecalho-exp p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.cabecalho-exp i{
+  padding-right: 5px;
+  color: #3e516c;
+}
