@@ -1,0 +1,52 @@
+body { font-family: Arial, sans-serif; }
+.miniaturas img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.miniaturas img:hover { opacity: 1; }
+
+.imagem-principal img {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.conteudo-modal {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 1200px;
+}
+
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

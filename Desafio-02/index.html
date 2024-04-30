@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Frontend Fusion - Deasafio 02</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <main class="exibicao-produtos">
+        <section class="miniaturas">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1883&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paisagem natural" onclick="abrirModal(this.src)">
+            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cidade à noite" onclick="abrirModal(this.src)">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Área urbana" onclick="abrirModal(this.src)">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oy1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Montanhas nevadas" onclick="abrirModal(this.src)">
+        </section>
+    </main>
     
+    <div id="meuModal" class="modal">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <img class="conteudo-modal" id="imagem-modal" alt="Imagem Ampliada">
+    </div>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
